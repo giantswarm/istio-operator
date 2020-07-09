@@ -1,10 +1,28 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/{APP-NAME}-app.svg?style=shield)](https://circleci.com/gh/giantswarm/{APP-NAME}-app)
+[![CircleCI](https://circleci.com/gh/giantswarm/istio-operator.svg?style=shield)](https://circleci.com/gh/giantswarm/istio-operator)
 
-# {APP-NAME}-app chart
+# Istio Operator chart
 
-Giant Swarm offers a {APP-NAME} Managed App which can be installed in tenant clusters.
-Here we define the {APP-NAME} chart with its templates and default configuration.
+[Istio Operator](https://github.com/istio/operator) is
+an open-source Operator for Kubernetes that manages Istio service meshes.
+
+Giant Swarm offers a Istio Operator as Managed App which can be installed in tenant clusters.
+
+## Configuration
+
+
+## Compatibility
+
+Tested on Giant Swarm release 11.x.x on `AWS` and `Azure`.
+
+## Known Issues
 
 ## Credit
 
-* {APP HELM REPOSITORY}
+* https://github.com/istio/operator/
+
+## Security Policy
+
+### Reporting a Vulnerability
+
+Please visit https://www.giantswarm.io/responsible-disclosure for information on
+reporting security issues.
