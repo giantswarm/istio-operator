@@ -1,0 +1,5 @@
+{{- if .Values.meshes }}
+{{ range $content :=  .Values.meshes }}
+    {{- $content }}
+{{ end }}
+{{- end }}
