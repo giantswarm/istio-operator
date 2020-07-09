@@ -1,0 +1,53 @@
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: istio
+spec:
+  # Allow the istio sidecar injector to work
+  allowedCapabilities:
+    - NET_ADMIN
+    - NET_RAW
+  seLinux:
+    rule: RunAsAny
+  supplementalGroups:
+    rule: RunAsAny
+  runAsUser:
+    rule: RunAsAny
+  fsGroup:
+    rule: RunAsAny
+  volumes:
+    - '*'
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: istio-psp
+rules:
+  - apiGroups:
+      - policy
+      - extensions
+    resources:
+      - podsecuritypolicies
+    resourceNames:
+      - istio
+    verbs:
+      - use
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: istio-psp
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: istio-psp
+subjects:
+- kind: ServiceAccount
+  name: istiod-service-account
+  namespace: istio-system
+- kind: ServiceAccount
+  name: istio-egressgateway-service-account
+  namespace: istio-system
+- kind: ServiceAccount
+  name: istio-ingressgateway-service-account
+  namespace: istio-system
