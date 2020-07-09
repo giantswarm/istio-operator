@@ -1,5 +1,5 @@
 
-meshes:
+meshes: []
   # - |
   #   apiVersion: install.istio.io/v1alpha1
   #   kind: IstioOperator
@@ -8,4 +8,3 @@ meshes:
   #     name: example-istiocontrolplane
   #   spec:
   #     profile: demo
-
