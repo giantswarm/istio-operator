@@ -17,7 +17,7 @@ spec:
       serviceAccountName: istio-operator
       containers:
         - name: istio-operator
-          image: gcr.io/istio-testing/operator:1.7-dev
+          image: "{{ .Values.image.registry }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
           command:
           - operator
           - server
@@ -44,4 +44,3 @@ spec:
               value: "istio-operator"
             - name: WAIT_FOR_RESOURCES_TIMEOUT
               value: 300s
-...

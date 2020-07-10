@@ -1,0 +1,13 @@
+image:
+  registry: quay.io
+  name: istio-operator
+  tag: 1.7
+meshes: []
+  # - |
+  #   apiVersion: install.istio.io/v1alpha1
+  #   kind: IstioOperator
+  #   metadata:
+  #     namespace: istio-system
+  #     name: example-istiocontrolplane
+  #   spec:
+  #     profile: demo
