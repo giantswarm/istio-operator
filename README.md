@@ -43,6 +43,12 @@ In case there is a new image published, go to [retagger](https://github.com/gian
 
 Currently the Istio deployment is limited to `istio-system` for security reasons. Let us know if it is an inconvenient for you.
 
+In case you see the problems during the deployment due to lacking `IstioOperator` Custom Resource Definition, please apply it manually 
+
+```bash
+> kubectl apply -f https://raw.githubusercontent.com/istio/operator/master/deploy/crds/istio_v1alpha1_istiooperator_crd.yaml
+```
+
 ## Credit
 
 * https://github.com/istio/operator/
