@@ -7,9 +7,11 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
+## [v1.0.0] - 2020-07-09
+
 ### Added 
 
 - Add initial chart. 
 
-[Unreleased]: https://github.com/giantswarm/istio-operator/compare/v0.0.1...master
-[v0.0.1]: https://github.com/giantswarm/istio-operator/releases/tag/v0.0.1
+[Unreleased]: https://github.com/giantswarm/istio-operator/compare/v1.0.0...master
+[v1.0.0]: https://github.com/giantswarm/istio-operator/releases/tag/v1.0.0
