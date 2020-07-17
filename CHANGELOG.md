@@ -7,8 +7,6 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
-## [v0.0.1] - 2020-07-09
-
 ### Added 
 
 - Add initial chart. 
