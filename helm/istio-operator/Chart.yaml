@@ -3,7 +3,7 @@ appVersion: v1.6.0
 description: A Helm Chart for Istio Operator.
 home: https://github.com/giantswarm/istio-operator
 icon: https://images.squarespace-cdn.com/content/v1/58e978bde58c6214d4a77c5c/1542068410201-SN3MPBXJ8N9VF4V8WAN2/ke17ZwdGBToddI8pDm48kBhs0kXmJu3pAC_LFF99rKVZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7eaDBaxyzPPG4B3J3_Z93rYLky5fjRrZeLmMK3F2aytfjfg4x4lXesDnM4MUpb-Vdw/11_istio_logo.png
-name: istio-operator-chart
+name: istio-operator
 sources:
-- https://github.com/giantswarm/istio-operator
+- https://github.com/istio/istio/operator
 version: [[ .Version ]]

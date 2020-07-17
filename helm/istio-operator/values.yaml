@@ -1,6 +1,6 @@
 image:
   registry: quay.io
-  name: istio-operator
+  name: giantswarm/istio-operator
   tag: 1.7
 meshes: []
   # - |

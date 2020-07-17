@@ -22,4 +22,4 @@ spec:
     singular: istiooperator
     shortNames:
     - iop
-{{- else }}
+{{- end }}
