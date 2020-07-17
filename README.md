@@ -7,6 +7,23 @@ an open-source Operator for Kubernetes that manages Istio service meshes.
 
 Giant Swarm offers the community Istio Operator as Managed App to help manage Istio in tenant clusters.
 
+
+*What is it?*
+
+  It is an operator that handles and abstract all complexity to manage Istio deployments.
+
+*Why did we add it?*
+    
+  Our customers are interested in testing and running an Istio Service Mesh to benefit from its features. At the same time, helm chart installation from the stable chart is not supported anymore. The new way to install uses this operator (or the command-line tool)
+
+*Who can use it?*
+
+  It has been tested in AWS and Azure, but it should work the same in KVM. Just take into account Istio is deployed with an Ingress Gateway, so in case of KVM it will need new mapped ports.
+
+*How to use it?*
+    
+  Deploy the operator passing the `values.yaml` that defines an Istio Service Mesh with the exact profile desired.
+
 ## Configuration
 
 Istio Operator relies on a Custom Resource `IstioOperator` to define a spec that helps the users to manage Service Mesh deployments.
