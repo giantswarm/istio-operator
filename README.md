@@ -5,7 +5,7 @@
 [Istio Operator](https://github.com/istio/operator) is
 an open-source Operator for Kubernetes that manages Istio service meshes.
 
-Giant Swarm offers the community Istio Operator as Managed App to help manage Istio in tenant clusters.
+Giant Swarm offers the community Istio Operator as a Playground App which can be installed, tested, and played with to help manage Istio.
 
 
 *What is it?*
