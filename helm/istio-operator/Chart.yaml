@@ -5,5 +5,5 @@ home: https://github.com/giantswarm/istio-operator
 icon: https://s.giantswarm.io/app-icons/1/png/istio-operator-light.png
 name: istio-operator
 sources:
-- https://github.com/istio/istio/operator
+- https://github.com/istio/operator
 version: [[ .Version ]]
