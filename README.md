@@ -1,5 +1,9 @@
 [![CircleCI](https://circleci.com/gh/giantswarm/istio-operator.svg?style=shield)](https://circleci.com/gh/giantswarm/istio-operator)
 
+# This application is no longer maintained!
+
+You might be interested in using our [`linkerd2-app`](https://github.com/giantswarm/linkerd2-app) instead.
+
 # Istio Operator chart
 
 [Istio Operator](https://github.com/istio/operator) is
